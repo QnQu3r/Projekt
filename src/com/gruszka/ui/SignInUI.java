@@ -83,7 +83,7 @@ public class SignInUI {
 		
 		loginButton.setOnAction(new EventHandler<ActionEvent>() {
                         
-                    public void loginButton (java.awt.event.ActionEvent evt){
+                   /*public void loginButton (java.awt.event.ActionEvent evt){
                         try{
                             Class.forName("com.mysql.jdbc,Driver");
                             Connection con = DriverManager.getConnection("jbdc:mysql://localhost:3306/globus", "qnquer", "pass123");
@@ -102,29 +102,24 @@ public class SignInUI {
                     catch(Exception e)  {
                     JOptionPane.showMessageDialog(null,e);
                 }         
-                    }
+                    }*/
                     
-			/*@Override
+			@Override
 			public void handle(ActionEvent event) {
 				if(loginField.getText().isEmpty()) {
 					showAlert(Alert.AlertType.ERROR, pane.getScene().getWindow(),
-							"Blad", "Podaj login!");
+							"Błąd", "Podaj login!");
 					return;
 				}
 				
 				if(passwordField.getText().isEmpty()) {
 					showAlert(Alert.AlertType.ERROR, pane.getScene().getWindow(),
-							"Blad", "Podaj has�o!");
+							"Błąd", "Podaj hasło!");
 				}
 				
 				String uLogin = loginField.getText().toString();
 				authenticate(uLogin);
-			}*/
-
-                    @Override
-                    public void handle(ActionEvent event) {
-                        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-                    }
+			}
 		});
 	}
 	
